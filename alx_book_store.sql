@@ -16,7 +16,7 @@ CREATE TABLE Customers(
 customer_id INT PRIMARY KEY,
 customer_name VARCHAR(215),
 email VARCHAR(215),
-Adress TEXT
+address TEXT
 );
 CREATE Table Orders(
 order_id INT PRIMARY KEY,
