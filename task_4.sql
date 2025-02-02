@@ -21,7 +21,7 @@ mycursor.execute("SELECT *
     WHERE TABLE_SCHEMA = 'alx_book_store',
     COLUMN_NAME, 
     COLUMN_TYPE,
-    AND TABLE_NAME='Books';")
+    TABLE_NAME = Books")
 
 # Close connection to the databasse  
 mycursor.close()
