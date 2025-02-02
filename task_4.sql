@@ -16,7 +16,7 @@ except mysql.connector.Error:
 mycursor = mydb.cursor()
 # Execute SQL statements using the execute() method on the cursor
 mycursor.execute("USE alx_book_store;")
-mycursor.execute("DESC Books;")
+mycursor.execute("SELECT * FROM Books;")
 
 # Close connection to the databasse  
 mycursor.close()
