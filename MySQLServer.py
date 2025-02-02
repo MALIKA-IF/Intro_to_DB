@@ -14,6 +14,7 @@ else:
 
 mycursor = mydb.cursor()
 # Execute SQL statements using the execute() method on the cursor
+mycursor.execute("CREATE DATABASE IF NOT EXISTS alx_book_store;")
 
 # Close connection to the databasse  
 mycursor.close()
