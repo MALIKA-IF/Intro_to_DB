@@ -17,9 +17,9 @@ mycursor = mydb.cursor()
 # Execute SQL statements using the execute() method on the cursor
 mycursor.execute("USE alx_book_store")
 mycursor.execute("SELECT *
-    FROM  INFORMATION_SCHEMA.COLUMNS
+    FROM  INFORMATION_SCHEMA.PARTITIONS
     WHERE TABLE_SCHEMA = 'alx_book_store'
-    AND   TABLE_NAME   = 'books'")
+    AND   TABLE_NAME   = 'Books'")
 
 # Close connection to the databasse  
 mycursor.close()
