@@ -7,9 +7,10 @@ mydb = mysql.connector.connect(
     database="alx_book_store"
 )
 
-if mydb:
+try:
     print("Database 'alx_book_store' created successfully!")
-else:    
+
+except mysql.connector.Error:
     print("Error")
 
 mycursor = mydb.cursor()
